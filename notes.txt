@@ -1,0 +1,9 @@
+Used:
+
+- Redis: To define the limits of requests per a time on a page
+- Neon: To handle the database
+- Auth: To handle the authentication of forms 
+- shadCn: To implement the UI of the applictaion
+- React-Hook-Form: To implement the forms 
+- ImageKit: To handle the Image uploader field
+- bcryptjs: To use some funcs like ( compare, hash ) in registration functions
