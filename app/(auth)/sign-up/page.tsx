@@ -1,9 +1,8 @@
 "use client";
 
 import AuthForm from "@/components/AuthForm";
-import { signUp } from "@/lib/auth";
+import { signUp } from "@/lib/actions/auth";
 import { signUpSchema } from "@/lib/validation";
-import React from "react";
 
 export default function page() {
   return (
