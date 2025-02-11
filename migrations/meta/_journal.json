@@ -8,6 +8,20 @@
       "when": 1738684746935,
       "tag": "0000_careful_scourge",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1739143302160,
+      "tag": "0001_fast_the_hand",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1739300024108,
+      "tag": "0002_clumsy_mesmero",
+      "breakpoints": true
     }
   ]
 }

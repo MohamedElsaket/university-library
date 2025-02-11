@@ -1,6 +1,10 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import BookCoverSvg from "./BookCoverSvg";
+import { IKImage } from "imagekitio-next";
+import config from "@/lib/config";
 
 type BookCoverVariant = "extraSmall" | "small" | "medium" | "regular" | "wide";
 
@@ -21,7 +25,7 @@ type Props = {
 
 export default function BookCover({
   variant = "regular",
-  coverColor = "#12B48",
+  coverColor,
   coverUrl = "https://placehold.co/400x600.png",
   className,
 }: Props) {
@@ -39,11 +43,14 @@ export default function BookCover({
         className="absolute z-10"
         style={{ left: "12%", width: "87.5%", height: "88%" }}
       >
-        <Image
-          src={coverUrl}
+        <IKImage
+          path={coverUrl}
+          urlEndpoint={config.env.imagekit.urlEndpoint}
           alt="Book Cover"
           fill
           className="rounded-sm object-fill"
+          loading="lazy"
+          lqip={{ active: true }}
         />
       </div>
     </div>
