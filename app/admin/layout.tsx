@@ -1,12 +1,13 @@
+import "@/styles/admin.css";
+
+import { eq } from "drizzle-orm";
 import { redirect } from "next/navigation";
 
 import { auth } from "@/auth";
-import AdminHeader from "@/components/admin/AdminHeader";
-import Sidebar from "@/components/admin/Sidebar";
-import "@/styles/admin.css";
 import { db } from "@/database/drizzle";
 import { users } from "@/database/schema";
-import { eq } from "drizzle-orm";
+import Sidebar from "@/components/admin/Sidebar";
+import AdminHeader from "@/components/admin/AdminHeader";
 
 export default async function layout({
   children,

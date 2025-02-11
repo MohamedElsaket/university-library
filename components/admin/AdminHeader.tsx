@@ -11,8 +11,6 @@ export default function AdminHeader({ session }: { session: Session }) {
           Monitor all of your users and books here{" "}
         </p>
       </div>
-
-      {/* <p>Search</p> */}
     </header>
   );
 }

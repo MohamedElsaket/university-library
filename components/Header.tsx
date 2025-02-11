@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Session } from "next-auth";
 import { usePathname } from "next/navigation";
 
 import { cn, getInitials } from "@/lib/utils";
-import { Session } from "next-auth";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 

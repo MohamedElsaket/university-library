@@ -1,11 +1,10 @@
 import Image from "next/image";
-import React from "react";
-import { Button } from "./ui/button";
-import BookCover from "./BookCover";
-import BorrowButton from "./BorrowButton";
+import { eq } from "drizzle-orm";
+
 import { db } from "@/database/drizzle";
 import { users } from "@/database/schema";
-import { eq } from "drizzle-orm";
+import BookCover from "./BookCover";
+import BorrowButton from "./BorrowButton";
 
 interface Props extends Book {
   userId: string;

@@ -1,8 +1,7 @@
 import Link from "next/link";
-import React from "react";
-import BookCover from "./BookCover";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
+import BookCover from "./BookCover";
 import { Button } from "./ui/button";
 
 export default function BookCard({

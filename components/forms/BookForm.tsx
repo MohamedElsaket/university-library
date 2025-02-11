@@ -1,9 +1,9 @@
 "use client";
 
-import { z } from "zod";
-import { useForm } from "react-hook-form";
-import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRouter } from "next/navigation";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 import {
   Form,
@@ -14,14 +14,13 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { toast } from "@/hooks/use-toast";
+import { createBook } from "@/lib/admin/actions/book";
 import { bookSchema } from "@/lib/validation";
-import { Textarea } from "../ui/textarea";
-import { Button } from "../ui/button";
 import FileUpload from "../FileUpload";
 import ColorPicker from "../admin/ColorPicker";
-import { createBook } from "@/lib/admin/actions/book";
-import { toast } from "@/hooks/use-toast";
-import { error } from "console";
+import { Button } from "../ui/button";
+import { Textarea } from "../ui/textarea";
 
 interface Props extends Partial<Book> {
   type: "create" | "update";

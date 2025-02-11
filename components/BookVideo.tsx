@@ -1,6 +1,7 @@
 "use client";
 
 import { IKVideo, ImageKitProvider } from "imagekitio-next";
+
 import config from "@/lib/config";
 
 const BookVideo = ({ videoUrl }: { videoUrl: string }) => {
