@@ -50,6 +50,8 @@ const AuthForm = <T extends FieldValues>({
 
   const handleSubmit: SubmitHandler<T> = async (data) => {
     const res = await onSubmit(data);
+    console.log(res);
+    console.log(data);
 
     if (res.success) {
       toast({
@@ -81,6 +83,7 @@ const AuthForm = <T extends FieldValues>({
           ? "Access the vast collection of resources, and stay updated"
           : "Please complete all fields and upload a valid university ID to gain access to the library"}
       </p>
+
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(handleSubmit)}

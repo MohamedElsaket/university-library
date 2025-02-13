@@ -22,6 +22,27 @@
       "when": 1739300024108,
       "tag": "0002_clumsy_mesmero",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1739487359635,
+      "tag": "0003_peaceful_bug",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1739487768093,
+      "tag": "0004_mean_malice",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1739487945932,
+      "tag": "0005_lyrical_wild_child",
+      "breakpoints": true
     }
   ]
 }
