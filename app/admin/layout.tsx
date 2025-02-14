@@ -18,14 +18,14 @@ export default async function layout({
 
   if (!session?.user?.id) redirect("/sign-in");
 
-  // const isAdmin = await db
-  //   .select({ asAdmin: users.role })
-  //   .from(users)
-  //   .where(eq(users.id, session.user.id))
-  //   .limit(1)
-  //   .then((res) => res[0].asAdmin === "ADMIN");
+  const isAdmin = await db
+    .select({ asAdmin: users.role })
+    .from(users)
+    .where(eq(users.id, session.user.id))
+    .limit(1)
+    .then((res) => res[0].asAdmin === "ADMIN");
 
-  // if (!isAdmin) redirect("/");
+  if (!isAdmin) redirect("/no-access");
 
   return (
     <main className="flex flex-row min-h-screen w-full">
